@@ -1,0 +1,31 @@
+body.mobile-only{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#fff6f9,#fff)}
+.message-wrap{height:100vh;padding:22px;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden;transition:opacity 1.2s;}
+.msg-top{font-size:13px;color:#9b4a6a;margin-bottom:10px}
+.msg-card{background:rgba(255,255,255,0.8);padding:18px;border-radius:16px;box-shadow:0 10px 30px rgba(200,90,120,0.08);max-width:360px;text-align:center;position:relative;z-index:1}
+.msg-text{font-size:16px;line-height:1.4;color:#3b2230}
+.continue-btn{margin-top:18px;background:linear-gradient(90deg,#ffd3e6,#ffb7d0);border:none;padding:12px 22px;border-radius:12px;font-size:16px;cursor:pointer}
+
+/* floating hearts animation */
+@keyframes floatHearts{
+  0%{transform:translateY(0) rotate(0deg);opacity:1;}
+  100%{transform:translateY(-300px) rotate(360deg);opacity:0;}
+}
+.heart{
+  position:absolute;
+  font-size:18px;
+  animation:floatHearts 6s linear infinite;
+  pointer-events:none;
+}
+
+.message-wrap {
+  height: 100vh;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center vertically */
+  position: relative;
+  overflow: hidden;
+  transition: opacity 1.2s;
+  text-align: center;
+}

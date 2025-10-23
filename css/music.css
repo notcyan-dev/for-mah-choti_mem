@@ -1,0 +1,27 @@
+body.mobile-only{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#fff6f9,#ffeef4)}
+.player-wrap{height:100vh;padding:18px;display:flex;flex-direction:column;align-items:center;transition:opacity 1.2s;}
+.player-top{font-size:13px;color:#9b4a6a;margin-bottom:20px}
+.album-card{background:rgba(255,255,255,0.9);width:92%;border-radius:16px;padding:16px;display:flex;gap:12px;align-items:center;box-shadow:0 10px 30px rgba(200,90,120,0.06)}
+.album-art{height:82px;width:82px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:36px;transition:transform 0.5s linear;}
+.track-info{flex:1}
+.track-title{font-size:16px}
+.track-artist{font-size:13px;color:rgba(0,0,0,0.45)}
+.controls{margin-top:30px}
+.play-btn{padding:12px 22px;border-radius:999px;border:none;font-size:16px;background:linear-gradient(90deg,#ffb7d0,#ffd3e6);cursor:pointer;box-shadow:0 6px 12px rgba(255,143,177,0.4);transition:0.3s;}
+.playing .album-art{animation:rotate 5s linear infinite;}
+
+@keyframes rotate{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+
+.player-wrap {
+  height: 100vh;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center vertically */
+  transition: opacity 1.2s;
+  text-align: center;
+}
